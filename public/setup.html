@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup · Lewis</title>
+<meta name="description" content="Lewis - homelab tinkerer, game hoster and maker of things.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/">~/lewis</a><a class="link" href="/">home</a><a class="link" href="/about">about</a><a class="link" href="/projects">projects</a><a class="link on" href="/setup">setup</a></div></nav>
+<div class="wrap">
+  <header>
+    <div class="prompt"><b>lewis@home</b>:~$ neofetch</div>
+    <h1>Setup</h1>
+    <p class="tag">The hardware everything runs on.</p>
+  </header>
+
+  <h2>main pc</h2>
+  <p class="sub">Gaming and everything else.</p>
+  <table class="specs">
+    <tr><td>CPU</td><td>AMD Ryzen 7 5700X</td></tr>
+    <tr><td>Cooler</td><td>Thermalright Peerless Assassin 120 SE</td></tr>
+    <tr><td>GPU</td><td>NVIDIA RTX 5070 12GB</td></tr>
+    <tr><td>RAM</td><td>32GB DDR4 3200MHz</td></tr>
+    <tr><td>Motherboard</td><td>MSI MPG B550 Gaming Plus</td></tr>
+    <tr><td>Storage</td><td>2TB NVMe + 500GB SSD, 3TB + 1TB HDD</td></tr>
+    <tr><td>PSU</td><td>MSI MAG A850GL PCIe 5</td></tr>
+    <tr><td>Case</td><td>MSI MPG Gungnir 110R</td></tr>
+  </table>
+
+  <h2>server (pve)</h2>
+  <p class="sub">The main Proxmox node. Runs the game servers, media and file share.</p>
+  <table class="specs">
+    <tr><td>CPU</td><td>AMD Ryzen 7 5700G</td></tr>
+    <tr><td>GPU</td><td>NVIDIA RTX 3060 12GB (passed through to a VM)</td></tr>
+    <tr><td>RAM</td><td>32GB DDR4 3200MHz</td></tr>
+    <tr><td>Motherboard</td><td>Gigabyte A520M K V2</td></tr>
+    <tr><td>Storage</td><td>256GB NVMe (boot), 500GB SSD (VMs), 2&times;2TB IronWolf ZFS mirror</td></tr>
+    <tr><td>PSU</td><td>MSI MAG A650BN</td></tr>
+    <tr><td>Case</td><td>SilverStone GD09</td></tr>
+  </table>
+
+  <h2>node 2 (pve2)</h2>
+  <p class="sub">An old all-in-one PC given a second life. Runs backups and a second game node.</p>
+  <table class="specs">
+    <tr><td>Machine</td><td>HP ProOne 400 G3 AiO</td></tr>
+    <tr><td>RAM</td><td>16GB</td></tr>
+  </table>
+
+  <h2>software</h2>
+  <table class="specs">
+    <tr><td>Hypervisor</td><td>Proxmox VE (2-node cluster + QDevice)</td></tr>
+    <tr><td>Game hosting</td><td>Pterodactyl + Wings, CtrlPanel</td></tr>
+    <tr><td>Media</td><td>Jellyfin</td></tr>
+    <tr><td>Backups</td><td>Proxmox Backup Server, nightly</td></tr>
+    <tr><td>Remote access</td><td>Cloudflare Tunnel, Tailscale</td></tr>
+  </table>
+
+  <footer><span>Lewis · Made with help from Claude</span><a href="https://github.com/OGbubbyman">GitHub</a></footer>
+</div>
+</body>
+</html>

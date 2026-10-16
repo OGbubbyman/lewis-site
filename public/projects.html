@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Lewis</title>
+<meta name="description" content="Lewis - homelab tinkerer, game hoster and maker of things.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/">~/lewis</a><a class="link" href="/">home</a><a class="link" href="/about">about</a><a class="link on" href="/projects">projects</a><a class="link" href="/setup">setup</a></div></nav>
+<div class="wrap">
+  <header>
+    <div class="prompt"><b>lewis@home</b>:~$ ls projects/</div>
+    <h1>Projects</h1>
+    <p class="tag">Things I've built and things I'm still building.</p>
+  </header>
+
+  <h2>bubbys hosting</h2>
+  <div class="card">
+    <span class="status">● live</span>
+    <h3><a href="https://bubbyshosting.uk">bubbyshosting.uk</a></h3>
+    <p>Free Minecraft server hosting for my friends, running entirely on hardware at home. People sign up on a dashboard, get credits, and spin up their own server in a couple of clicks.</p>
+    <p>Behind it: a Pterodactyl panel with two game nodes, CtrlPanel for sign-ups and credits, Cloudflare Tunnel so nothing on my network is exposed, and a small script that keeps the Minecraft address pointing at my home connection.</p>
+    <div class="chips"><span class="chip">Pterodactyl</span><span class="chip">Wings</span><span class="chip">CtrlPanel</span><span class="chip">Cloudflare</span><span class="chip">Ubuntu</span></div>
+  </div>
+
+  <h2>the homelab</h2>
+  <div class="card">
+    <span class="status">● running</span>
+    <h3>Two-node Proxmox cluster</h3>
+    <p>My main server and an old all-in-one PC clustered together, with a Chromebook running Linux as the tie-break vote. It runs the game servers, a Jellyfin media server, a network file share, a Windows VM with a passed-through RTX 3060, and nightly backups to Proxmox Backup Server.</p>
+    <div class="chips"><span class="chip">Proxmox VE</span><span class="chip">ZFS mirror</span><span class="chip">PBS</span><span class="chip">Jellyfin</span><span class="chip">Tailscale</span><span class="chip">GPU passthrough</span></div>
+  </div>
+
+  <h2>these websites</h2>
+  <div class="card">
+    <span class="status">● live</span>
+    <h3>This site + bubbyshosting.uk</h3>
+    <p>Plain HTML and CSS hosted on Cloudflare Workers, deployed automatically from GitHub every time I push a change.</p>
+    <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Cloudflare Workers</span><span class="chip">GitHub</span></div>
+  </div>
+
+  <h2>next</h2>
+  <div class="placeholder">More projects coming soon.</div>
+
+  <footer><span>Lewis · Made with help from Claude</span><a href="https://github.com/OGbubbyman">GitHub</a></footer>
+</div>
+</body>
+</html>
