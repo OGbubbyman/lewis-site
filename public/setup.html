@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Setup · Lewis</title>
+<title>Full Setup · Lewis</title>
 <meta name="description" content="Lewis - homelab tinkerer, game hoster and maker of things.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +15,16 @@
 <div class="wrap">
   <header>
     <div class="prompt"><b>lewis@home</b>:~$ neofetch</div>
-    <h1>Setup</h1>
-    <p class="tag">The hardware everything runs on.</p>
+    <h1>Full Setup</h1>
+    <p class="tag">Everything on (and under) my desk.</p>
   </header>
+
+  <h2>monitors</h2>
+  <table class="specs">
+    <tr><td>Left</td><td>Samsung LF22T350FHUXEN &middot; 1080p 75Hz</td></tr>
+    <tr><td>Centre</td><td>Lenovo Legion R27qe Gen 2 &middot; 1440p 200Hz</td></tr>
+    <tr><td>Right</td><td>Lenovo G24-20 &middot; 1080p 165Hz &middot; mostly the main PC, switched to the server when needed</td></tr>
+  </table>
 
   <h2>main pc</h2>
   <p class="sub">Gaming and everything else.</p>
@@ -47,8 +54,19 @@
   <h2>node 2 (pve2)</h2>
   <p class="sub">An old all-in-one PC given a second life. Runs backups and a second game node.</p>
   <table class="specs">
-    <tr><td>Machine</td><td>HP ProOne 400 G3 AiO</td></tr>
-    <tr><td>RAM</td><td>16GB</td></tr>
+    <tr><td>Machine</td><td>HP ProOne 400 G3 20" Touch AiO</td></tr>
+    <tr><td>CPU</td><td>Intel Pentium G4560T (2 cores / 4 threads)</td></tr>
+    <tr><td>Graphics</td><td>Intel HD Graphics 610 (integrated)</td></tr>
+    <tr><td>RAM</td><td>16GB DDR4</td></tr>
+    <tr><td>Storage</td><td>500GB HDD</td></tr>
+    <tr><td>Display</td><td>19.5" 1600&times;900 touchscreen</td></tr>
+    <tr><td>Runs</td><td>Proxmox Backup Server, Pterodactyl Wings node 2</td></tr>
+  </table>
+
+  <h2>tie-breaker</h2>
+  <p class="sub">Keeps the two-node cluster happy if one server goes down.</p>
+  <table class="specs">
+    <tr><td>Machine</td><td>Chromebook running Linux Mint (Proxmox QDevice)</td></tr>
   </table>
 
   <h2>software</h2>
