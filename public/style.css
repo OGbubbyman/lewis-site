@@ -36,3 +36,12 @@ table.specs tr:first-child td{border-top:0}
 table.specs td:first-child{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent2);width:34%;white-space:nowrap}
 .sub{color:var(--muted);font-size:15px;margin:-6px 0 14px}
 footer{border-top:1px solid var(--line);margin-top:64px;padding:24px 0 40px;color:var(--muted);font-size:14px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between}
+
+figure.photo{margin:0 0 14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure.photo img{display:block;width:100%;height:auto}
+figure.photo.tall{max-width:380px}
+figure.photo figcaption{padding:8px 12px;color:var(--muted);font-size:13px}
+.photos2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.gallery figure.photo{margin:0}
+.gallery figure.photo img{aspect-ratio:4/3;object-fit:cover}
