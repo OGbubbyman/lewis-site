@@ -42,7 +42,7 @@
   </table>
 
   <h2>server (pve)</h2>
-  <p class="sub">The main Proxmox node. Runs the game servers, media and file share.</p>
+  <p class="sub">The Proxmox server. Runs the game servers, media and file share.</p>
   <div class="photos2"><figure class="photo"><a href="/img/server.jpg"><img src="/img/server.jpg" alt="SilverStone GD09 case" loading="lazy"></a><figcaption>SilverStone GD09 case</figcaption></figure><figure class="photo"><a href="/img/server-inside.jpg"><img src="/img/server-inside.jpg" alt="Inside: RTX 3060, IronWolf drives, MSI MAG PSU" loading="lazy"></a><figcaption>Inside: RTX 3060, IronWolf drives, MSI MAG PSU</figcaption></figure></div>
   <table class="specs">
     <tr><td>CPU</td><td>AMD Ryzen 7 5700G</td></tr>
@@ -54,31 +54,11 @@
     <tr><td>Case</td><td>SilverStone GD09</td></tr>
   </table>
 
-  <h2>node 2 (pve2)</h2>
-  <p class="sub">An old all-in-one PC given a second life. Runs backups and a second game node.</p>
-  <figure class="photo"><a href="/img/homelab-corner.jpg"><img src="/img/homelab-corner.jpg" alt="The homelab corner: the server, an old tower and the HP AIO (node 2)" loading="lazy"></a><figcaption>The homelab corner: the server, an old tower and the HP AIO (node 2)</figcaption></figure>
-  <table class="specs">
-    <tr><td>Machine</td><td>HP ProOne 400 G3 20" Touch AiO</td></tr>
-    <tr><td>CPU</td><td>Intel Pentium G4560T (2 cores / 4 threads)</td></tr>
-    <tr><td>Graphics</td><td>Intel HD Graphics 610 (integrated)</td></tr>
-    <tr><td>RAM</td><td>16GB DDR4</td></tr>
-    <tr><td>Storage</td><td>500GB HDD</td></tr>
-    <tr><td>Display</td><td>19.5" 1600&times;900 touchscreen</td></tr>
-    <tr><td>Runs</td><td>Proxmox Backup Server, Pterodactyl Wings node 2</td></tr>
-  </table>
-
-  <h2>tie-breaker</h2>
-  <p class="sub">Keeps the two-node cluster happy if one server goes down.</p>
-  <table class="specs">
-    <tr><td>Machine</td><td>Chromebook running Linux Mint (Proxmox QDevice)</td></tr>
-  </table>
-
   <h2>software</h2>
   <table class="specs">
-    <tr><td>Hypervisor</td><td>Proxmox VE (2-node cluster + QDevice)</td></tr>
+    <tr><td>Hypervisor</td><td>Proxmox VE</td></tr>
     <tr><td>Game hosting</td><td>Pterodactyl + Wings, CtrlPanel</td></tr>
     <tr><td>Media</td><td>Jellyfin</td></tr>
-    <tr><td>Backups</td><td>Proxmox Backup Server, nightly</td></tr>
     <tr><td>Remote access</td><td>Cloudflare Tunnel, Tailscale</td></tr>
   </table>
 
